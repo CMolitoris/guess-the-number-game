@@ -1,0 +1,7 @@
+<thlogic xmlns:th="http://www.thymeleaf.org">
+    <attr sel="#head" th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#play" th:href="@{__${T(com.udemy.learn.util.GameMappings).PLAY}__}" th:text="#{game.play}"/>
+    <attr sel="#footer" th:replace="~{fragments/footer :: footerHead}"/>
+    <attr sel="#game-title" th:text="#{game.title}"/>
+
+</thlogic>

@@ -1,0 +1,18 @@
+<thlogic xmlns:th="http://www.thymeleaf.org">
+   <attr sel="#headId"
+         th:replace="~{fragments/head :: headFragment}"/>
+   <attr sel="#main-message"
+          th:text="${__${T(com.udemy.learn.util.AttributeNames).MAIN_MESSAGE}__}"/>
+   <attr sel="#result-message"
+          th:text="${__${T(com.udemy.learn.util.AttributeNames).RESULT_MESSAGE}__}"/>
+   <attr sel="#game-form"
+          th:action="@{__${T(com.udemy.learn.util.GameMappings).PLAY}__}"/>
+   <attr sel="#footerId"
+          th:replace="~{fragments/footer :: footerHead}"/>
+   <attr sel="#game-title"
+          th:text="#{game.title}"/>
+   <attr sel="#enter-guess"
+          th:text="#{game.enter.guess}"/>
+   <attr sel="#submit"
+          th:value="#{game.submit}"/>
+</thlogic>

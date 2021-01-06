@@ -19,7 +19,7 @@ public class GameConfig {
     private int maxNumber;
     @Value("${game.guessCount:5}")
     private int guessCount;
-    @Value("${game.minNumber:10}")
+    @Value("0")
     private int minNumber;
 
     //bean methods

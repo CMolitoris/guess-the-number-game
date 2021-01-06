@@ -1,0 +1,4 @@
+<thlogic xmlns:th="http://www.thymeleaf.org">
+    <attr sel="#footerHead" th:fragment="footerHead"/>
+    <attr sel="#created-by" th:text="|#{game.createdBy} Christopher Molitoris |"/>
+</thlogic>

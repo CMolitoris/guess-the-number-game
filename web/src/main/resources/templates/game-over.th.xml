@@ -1,0 +1,16 @@
+<thlogic xmlns:th="http://www.thymeleaf.org">
+    <attr sel="#head"
+          th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#result"
+          th:text="${__${T(com.udemy.learn.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#restart"
+          th:text="#{game.restart}" th:href="@{__${T(com.udemy.learn.util.GameMappings).RESTART}__}"/>
+    <attr sel="#home"
+          th:text="#{game.home}" th:href="@{__${T(com.udemy.learn.util.GameMappings).HOME}__}"/>
+    <attr sel="#footer"
+          th:replace="~{fragments/footer :: footerHead}"/>
+    <attr sel="#game-title"
+          th:text="#{game.title}"/>
+    <attr sel="#game-over" th:text="#{game.over}"/>
+
+</thlogic>
